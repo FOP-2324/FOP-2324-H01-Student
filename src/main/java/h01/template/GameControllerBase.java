@@ -146,7 +146,7 @@ public abstract class GameControllerBase {
      * Initializes the {@link World} and adds the {@link Robot}s to it.
      */
     public void setupWorld() {
-        World.setSize(10, 10);
+        World.setSize(GameConstants.WORLD_WIDTH, GameConstants.WORLD_HEIGHT);
         World.setDelay(0);
         World.setVisible(true);
         MazeGenerator.generateMaze();
