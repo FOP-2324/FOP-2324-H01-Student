@@ -168,14 +168,14 @@ public abstract class GameControllerBase {
                 World.getWidth() - 1,
                 0,
                 Direction.UP,
-                5 * World.getWidth() * World.getHeight()
+                GameConstants.CONTAMINANT_ONE_START_COINS_MULTIPLIER * World.getWidth() * World.getHeight()
             )
         );
         this.robots.add(contaminant2 = new Contaminant2(
                 World.getWidth() - 1,
                 World.getHeight() - 1,
                 Direction.UP,
-                2 * World.getWidth() * World.getHeight()
+                GameConstants.CONTAMINANT_TWO_START_COINS_MULTIPLIER * World.getWidth() * World.getHeight()
             )
         );
     }
