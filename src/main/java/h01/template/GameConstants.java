@@ -3,6 +3,7 @@ package h01.template;
 import java.util.concurrent.ThreadLocalRandom;
 
 import static org.tudalgo.algoutils.student.io.PropertyUtils.getIntProperty;
+import static org.tudalgo.algoutils.student.io.PropertyUtils.getLongProperty;
 
 public final class GameConstants {
     public static final int WORLD_WIDTH = getIntProperty("h01.properties", "WORLD_WIDTH");
@@ -25,7 +26,7 @@ public final class GameConstants {
     );
     public static final int CLEANER_CAPACITY = getIntProperty("h01.properties", "CLEANER_CAPACITY");
     public static final int TICK_DELAY = getIntProperty("h01.properties", "TICK_DELAY");
-    private static final int _RANDOM_SEED = getIntProperty("h01.properties", "RANDOM_SEED");
+    private static final long _RANDOM_SEED = getLongProperty("h01.properties", "RANDOM_SEED");
     public static final long RANDOM_SEED = _RANDOM_SEED == 0 ? ThreadLocalRandom.current().nextLong() : _RANDOM_SEED;
 
     /**
